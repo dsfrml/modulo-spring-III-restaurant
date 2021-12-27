@@ -5,16 +5,15 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Order {
+public class Dish {
+
     private Integer id;
-    private Table table;
-    private List<Dish> dishList;
-    private Double totalValue;
+    private Double price;
+    private String description;
+    private Integer quantity;
 
 }

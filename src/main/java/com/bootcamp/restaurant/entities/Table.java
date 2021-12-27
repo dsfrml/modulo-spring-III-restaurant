@@ -11,10 +11,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Order {
+public class Table {
     private Integer id;
-    private Table table;
-    private List<Dish> dishList;
-    private Double totalValue;
-
+    private Double totalValueConsumed;
+    private List<Order> orders ;
 }
