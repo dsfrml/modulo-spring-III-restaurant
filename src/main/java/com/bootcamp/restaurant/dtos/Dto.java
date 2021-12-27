@@ -1,6 +1,6 @@
 package com.bootcamp.restaurant.dtos;
 
 public interface Dto<T, D> {
-    T convertToEntity(D d);
+    T convert();
     D convertToDTO(T t);
 }
