@@ -1,18 +1,16 @@
 package com.bootcamp.restaurant.dtos;
 
-public class OrderDTO implements Dto {
+import com.bootcamp.restaurant.entities.Order;
+
+public class OrderDTO implements Dto<Order, OrderDTO>{
+
     @Override
-    public Object convertToEntity(Object o) {
+    public Order convert() {
         return null;
     }
 
     @Override
-    public Object convert() {
-        return null;
-    }
-
-    @Override
-    public Object convertToDTO(Object o) {
+    public OrderDTO convertToDTO(Order order) {
         return null;
     }
 }
